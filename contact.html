@@ -3,48 +3,57 @@
   <head>
     <meta charset="utf-8">
     <meta name="author" content="Group N">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barbera Shop | Contact</title>
     <link rel="icon" type="image/svg" href="media/logo.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
   </head>
   <body>
   <header>
     <nav>
-      <img src="media/logo.svg" alt="logo">
-      <div class="navlinks">
-        <a href="about.html">About</a>
-        <a href="barbers.html">Our Barbers</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
+      <div class="container">
+        <img class="logo" src="media/logo.svg" alt="logo">
+        <div class="navlinks">
+          <a href="about.html">About</a>
+          <a href="barbers.html">Our Barbers</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </div>
       </div>
     </nav>
   </header>
   <main>
-    <h1>Fill out the form, and we'll get back to you</h1>
-    <form class="" action="index.html" method="post">
-      <label for="name">Name</label>
-      <input type="text" name="name" value="" placeholder="Name" id="name">
-      <label for="tel">Tel</label>
-      <input type="tel" name="tel" value="" placeholder="Tel" id="tel">
-      <select class="" name="barbers">
-        <option value="misty">Misty Knight</option>
-        <option value="johnb">John Beer</option>
-        <option value="johnr">John Ralfeo</option>
-        <option value="guy">Guy Richie</option>
-      </select>
-      <p>What do you want done?</p>
-      <input type="checkbox" name="beard" value="beard">
-      <label for="beard">Beard</label>
-      <input type="checkbox" name="moustache" value="moustache">
-      <label for="moustache">Moustache</label>
-      <input type="checkbox" name="haircut" value="haircut">
-      <label for="haircut">Haircut</label>
-      <input type="submit" name="" value="Book me">
-    </form>
+    <div class="container">
+      <h1>Fill out the form, and we'll get back to you</h1>
+      <form class="" action="index.html" method="post">
+        <label for="name">Name</label>
+        <input type="text" name="name" value="" placeholder="Name" id="name">
+        <label for="tel">Tel</label>
+        <input type="tel" name="tel" value="" placeholder="Tel" id="tel">
+        <select class="" name="barbers">
+          <option value="misty">Misty Knight</option>
+          <option value="johnb">John Beer</option>
+          <option value="johnr">John Ralfeo</option>
+          <option value="guy">Guy Richie</option>
+        </select>
+        <p>What do you want done?</p>
+        <input type="checkbox" name="beard" value="beard">
+        <label for="beard">Beard</label>
+        <input type="checkbox" name="moustache" value="moustache">
+        <label for="moustache">Moustache</label>
+        <input type="checkbox" name="haircut" value="haircut">
+        <label for="haircut">Haircut</label>
+        <input type="submit" name="" value="Book me" class="button">
+      </form>
+    </div>
   </main>
   <footer>
-    <p>Website by Group N &#169;</p>
-    <p>Tel: 788 976 3546 | 42 Wallaby Way, Sydney</p>
+    <div class="container">
+      <p>Website by Group N &#169;</p>
+      <p>Tel: 788 976 3546 | 42 Wallaby Way, Sydney</p>
+    </div>
   </footer>
   </body>
 </html>

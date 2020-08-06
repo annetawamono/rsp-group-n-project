@@ -1,0 +1,73 @@
+/* Contains global styles for font, navbar, footer, h1, h2, a, input, label, select, button, div */
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700;900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Code Pro', monospace;
+  min-height: 100vh;
+}
+
+h1 {
+  /* to get the rem value, divide the font size in pixels by 16 */
+  font-size: 4.5rem;
+  font-weight: 900;
+}
+
+p, input, label, select, button, div {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+button, .button {
+  background-color: #ffffff;
+  border-radius: 0;
+  padding: 0.63rem 1.81rem;
+  border: solid 8px #000000;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.container {
+  width: 1440px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+nav .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+}
+
+nav .logo {
+  width: 101px;
+}
+
+.navlinks a {
+  padding: 0.63rem;
+  margin-left: 0.63rem;
+  margin-right: 0.63rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 8.75rem;
+  align-items: center;
+}
