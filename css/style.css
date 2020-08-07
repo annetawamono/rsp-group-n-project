@@ -62,7 +62,7 @@ nav .logo {
   font-weight: bold;
 }
 
-.navlinks a:hover, nav a.active {
+.navlinks a:hover, nav a.active, nav .logo:hover {
   border-bottom: solid 8px #ffffff;
 }
 
@@ -135,5 +135,11 @@ footer .container {
 
   .menuOpened {
     display: block;
+  }
+
+  footer .container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 }
