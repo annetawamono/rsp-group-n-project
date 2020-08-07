@@ -34,7 +34,7 @@ button, .button {
 }
 
 .container {
-  width: 1440px;
+  width: 100vw;
   max-width: 1440px;
   box-sizing: border-box;
   margin: 0 auto;
@@ -122,7 +122,7 @@ footer .container {
   nav .mobileMenu a {
     font-size: 1.5rem;
     padding: 0.63rem;
-    margin-bottom: 2.13rem;
+    margin-bottom: 5.1%;
   }
 
   nav .nav__desktop {
@@ -130,7 +130,7 @@ footer .container {
   }
 
   .menuClosed {
-    display: none;
+    display: none !important;
   }
 
   .menuOpened {
