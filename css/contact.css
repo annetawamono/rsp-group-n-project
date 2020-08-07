@@ -1,0 +1,124 @@
+body {
+  background: linear-gradient(243.89deg, #FFB847 11.16%, rgba(255, 171, 171, 0.458333) 59.69%, rgba(255, 255, 255, 0) 103.42%), #FD5151;
+}
+
+.contact__heading {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 6.88rem;
+}
+
+.contact__form {
+  width: 467px;
+  max-width: 467px;
+  margin: 0 auto;
+}
+
+.contact__form input[type=text] + label,  .contact__form input[type=tel] + label {
+  display: none;
+}
+
+.contact__form input[type=text], .contact__form input[type=tel], select {
+  width: 100%;
+  background-color: rgba(0,0,0,0);
+  border: none;
+  border-bottom: solid 8px #000000;
+  padding-bottom: 1.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.contact__form input[type=text]::-webkit-input-placeholder, .contact__form input[type=tel]::placeholder { /* Edge */
+  color: #ffffff;
+}
+
+.contact__form input[type=text]::-ms-input-placeholder, .contact__form input[type=tel]::placeholder { /* IE 10-11 */
+  color: #ffffff;
+}
+
+.contact__form input[type=text], .contact__form input[type=text]::placeholder, .contact__form input[type=tel], .contact__form input[type=tel]::placeholder, .contact__form select {
+  color: #ffffff;
+}
+
+.contact__form select {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-image: url('../media/drop_arrow.svg');
+  background-position:
+    100% 0,
+    calc(100% - 15px) calc(1em + 2px),
+    100% 0;
+  background-size:
+    32px 32px,
+    32px 32px,
+    2.5em 2.5em;
+  background-repeat: no-repeat;
+
+  margin-bottom: 1.6rem;
+}
+
+.contact__form select::-ms-expand { /*IE 11*/
+    display: none;
+}
+
+.contact__form select::after {
+  content: "";
+}
+
+.contact__form select option {
+  color: #000000;
+}
+
+.contact__checkTitle {
+  margin-bottom: 1.5rem;
+}
+
+.contact__form input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.contact__form label {
+  padding-left: 45px;
+}
+
+.contact__form .checkMark {
+  position: absolute;
+  height: 27px;
+  width: 27px;
+  box-sizing: border-box;
+  border: solid 8px #000000;
+}
+
+.checkMark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.contact__form input[type=checkbox]:checked ~ .checkMark::after {
+  display: block;
+}
+
+.contact__form .checkMark::after {
+  top: -8px;
+  left: -8px;
+  height: 27px;
+  width: 27px;
+  box-sizing: border-box;
+  border: solid 8px #000000;
+  background-color: #ffffff;
+}
+
+.contact__form .button {
+  margin-top: 4.8rem;
+  margin-bottom: 5.5rem;
+}

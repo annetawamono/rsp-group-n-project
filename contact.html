@@ -27,23 +27,26 @@
   <main>
     <div class="container contact">
       <h1 class="contact__heading">Fill out the<br>form, and we'll<br>get back to you</h1>
-      <form class="" action="index.html" method="post">
-        <label for="name">Name</label>
+      <form class="contact__form" action="index.html" method="post">
         <input type="text" name="name" value="" placeholder="Name" id="name">
-        <label for="tel">Tel</label>
+        <label for="name">Name</label>
         <input type="tel" name="tel" value="" placeholder="Tel" id="tel">
+        <label for="tel">Tel</label>
         <select class="" name="barbers">
           <option value="misty">Misty Knight</option>
           <option value="johnb">John Beer</option>
           <option value="johnr">John Ralfeo</option>
           <option value="guy">Guy Richie</option>
         </select>
-        <p>What do you want done?</p>
-        <input type="checkbox" name="beard" value="beard">
+        <p class="contact__checkTitle">What do you want done?</p>
+        <input id="beard" type="checkbox" name="beard" value="beard">
+        <span class="checkMark"></span>
         <label for="beard">Beard</label>
-        <input type="checkbox" name="moustache" value="moustache">
+        <input id="moustache" type="checkbox" name="moustache" value="moustache">
+        <span class="checkMark"></span>
         <label for="moustache">Moustache</label>
-        <input type="checkbox" name="haircut" value="haircut">
+        <input id="haircut" type="checkbox" name="haircut" value="haircut">
+        <span class="checkMark"></span>
         <label for="haircut">Haircut</label>
         <input type="submit" name="" value="Book me" class="button">
       </form>
