@@ -66,6 +66,14 @@ nav .logo {
   border-bottom: solid 8px #ffffff;
 }
 
+nav .nav__mobile {
+  display: none;
+}
+
+.nav_mobile div.mobileMenu.menuClosed {
+  display: none;
+}
+
 footer {
   background-color: #000000;
   color: #ffffff;
@@ -77,4 +85,31 @@ footer .container {
   justify-content: space-between;
   height: 8.75rem;
   align-items: center;
+}
+
+@media only screen and (max-width: 786px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  p, input, label, select, button, div {
+    font-size: 1rem;
+  }
+
+  .container {
+    width: 90%;
+    max-width: 375px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  nav .nav__mobile {
+    display: flex;
+    height: 5.69rem;
+    justify-content: flex-end;
+  }
+
+  nav .nav__desktop {
+    display: none;
+  }
 }

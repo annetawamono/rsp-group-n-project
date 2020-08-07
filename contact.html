@@ -12,8 +12,8 @@
   <body>
   <header>
     <nav>
-      <div class="container">
-        <img class="logo" src="media/logo_shadow.svg" alt="logo">
+      <div class="container nav__desktop">
+        <a href="index.html"><img class="logo" src="media/logo_shadow.svg" alt="logo"></a>
         <div class="navlinks">
           <a href="about.html">About</a>
           <a href="barbers.html">Our Barbers</a>
@@ -22,11 +22,15 @@
           <a href="contact.html">Contact</a>
         </div>
       </div>
+      <div class="container nav__mobile">
+        <a href=""><img class="menu" src="media/nav_mobile.svg" alt="Menu"></a>
+      </div>
     </nav>
   </header>
   <main>
     <div class="container contact">
-      <h1 class="contact__heading">Fill out the<br>form, and we'll<br>get back to you</h1>
+      <h1 class="contact__heading heading__desktop">Fill out the<br>form, and we'll<br>get back to you</h1>
+      <h1 class="contact__heading heading__mobile">Fill out<br>the form</h1>
       <form class="contact__form" action="index.html" method="post">
         <input type="text" name="name" value="" placeholder="Name" id="name">
         <label for="name">Name</label>
@@ -39,15 +43,23 @@
           <option value="guy">Guy Richie</option>
         </select>
         <p class="contact__checkTitle">What do you want done?</p>
-        <input id="beard" type="checkbox" name="beard" value="beard">
-        <span class="checkMark"></span>
-        <label for="beard">Beard</label>
-        <input id="moustache" type="checkbox" name="moustache" value="moustache">
-        <span class="checkMark"></span>
-        <label for="moustache">Moustache</label>
-        <input id="haircut" type="checkbox" name="haircut" value="haircut">
-        <span class="checkMark"></span>
-        <label for="haircut">Haircut</label>
+        <div class="contact__checkboxes">
+          <div class="contact__checkbox">
+            <input id="beard" type="checkbox" name="beard" value="beard">
+            <span class="checkMark"></span>
+            <label for="beard">Beard</label>
+          </div>
+          <div class="contact__checkbox">
+            <input id="moustache" type="checkbox" name="moustache" value="moustache">
+            <span class="checkMark"></span>
+            <label for="moustache">Moustache</label>
+          </div>
+          <div class="contact__checkbox">
+            <input id="haircut" type="checkbox" name="haircut" value="haircut">
+            <span class="checkMark"></span>
+            <label for="haircut">Haircut</label>
+          </div>
+        </div>
         <input type="submit" name="" value="Book me" class="button">
       </form>
     </div>

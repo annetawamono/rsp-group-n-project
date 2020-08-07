@@ -9,6 +9,10 @@ body {
   margin-bottom: 6.88rem;
 }
 
+.contact .heading__mobile {
+  display: none;
+}
+
 .contact__form {
   width: 467px;
   max-width: 467px;
@@ -19,7 +23,7 @@ body {
   display: none;
 }
 
-.contact__form input[type=text], .contact__form input[type=tel], select {
+.contact__form input[type=text], .contact__form input[type=text]:focus, .contact__form input[type=tel], .contact__form input[type=tel]:focus, select {
   width: 100%;
   background-color: rgba(0,0,0,0);
   border: none;
@@ -30,14 +34,20 @@ body {
 
 .contact__form input[type=text]::-webkit-input-placeholder, .contact__form input[type=tel]::placeholder { /* Edge */
   color: #ffffff;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1.5rem;
 }
 
 .contact__form input[type=text]::-ms-input-placeholder, .contact__form input[type=tel]::placeholder { /* IE 10-11 */
   color: #ffffff;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1.5rem;
 }
 
 .contact__form input[type=text], .contact__form input[type=text]::placeholder, .contact__form input[type=tel], .contact__form input[type=tel]::placeholder, .contact__form select {
   color: #ffffff;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1.5rem;
 }
 
 .contact__form select {
@@ -86,8 +96,25 @@ body {
   width: 0;
 }
 
+.contact__checkboxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact__checkbox {
+  margin-right: 1rem;
+  margin-bottom: 1.5rem;
+}
+
 .contact__form label {
   padding-left: 45px;
+  color: #ffffff;
+}
+
+.contact__form label:hover {
+  cursor: pointer;
 }
 
 .contact__form .checkMark {
@@ -104,7 +131,7 @@ body {
   display: none;
 }
 
-.contact__form input[type=checkbox]:checked ~ .checkMark::after {
+.contact__form input[type=checkbox]:checked + .checkMark::after {
   display: block;
 }
 
@@ -119,6 +146,35 @@ body {
 }
 
 .contact__form .button {
-  margin-top: 4.8rem;
+  margin-top: 3.3rem;
   margin-bottom: 5.5rem;
+}
+@media only screen and (max-width: 786px) {
+  body {
+    background-repeat: no-repeat;
+  }
+
+  .contact .heading__mobile {
+    display: block;
+  }
+
+  .contact .heading__desktop {
+    display: none;
+  }
+
+  .contact__form {
+    width: 100%;
+  }
+
+  .contact__form input[type=text]::-webkit-input-placeholder, .contact__form input[type=tel]::placeholder { /* Edge */
+    font-size: 1rem;
+  }
+
+  .contact__form input[type=text]::-ms-input-placeholder, .contact__form input[type=tel]::placeholder { /* IE 10-11 */
+    font-size: 1rem;
+  }
+
+  .contact__form input[type=text], .contact__form input[type=text]::placeholder, .contact__form input[type=tel], .contact__form input[type=tel]::placeholder, .contact__form select {
+    font-size: 1rem;
+  }
 }
