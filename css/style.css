@@ -62,6 +62,10 @@ nav .logo {
   font-weight: bold;
 }
 
+.navlinks a:hover {
+  border-bottom: solid 8px #ffffff;
+}
+
 footer {
   background-color: #000000;
   color: #ffffff;
