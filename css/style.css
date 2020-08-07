@@ -62,15 +62,11 @@ nav .logo {
   font-weight: bold;
 }
 
-.navlinks a:hover {
+.navlinks a:hover, nav a.active {
   border-bottom: solid 8px #ffffff;
 }
 
 nav .nav__mobile {
-  display: none;
-}
-
-.nav_mobile div.mobileMenu.menuClosed {
   display: none;
 }
 
@@ -109,7 +105,35 @@ footer .container {
     justify-content: flex-end;
   }
 
+  /* add background color of your mobile menu to you own css */
+  nav .mobileMenu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+  }
+
+  nav .mobileMenu a {
+    font-size: 1.5rem;
+    padding: 0.63rem;
+    margin-bottom: 2.13rem;
+  }
+
   nav .nav__desktop {
     display: none;
+  }
+
+  .menuClosed {
+    display: none;
+  }
+
+  .menuOpened {
+    display: block;
   }
 }

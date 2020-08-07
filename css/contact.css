@@ -154,6 +154,10 @@ body {
     background-repeat: no-repeat;
   }
 
+  nav .mobileMenu {
+    background-color: #FFB847;
+  }
+
   .contact .heading__mobile {
     display: block;
   }
