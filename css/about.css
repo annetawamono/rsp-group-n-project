@@ -1,0 +1,51 @@
+.hero_container {
+    position: relative;
+    height: 65rem;
+    background: linear-gradient(243.89deg, #FFB847 11.16%, rgba(255, 171, 171, 0.458333) 59.69%, rgba(255, 255, 255, 0) 103.42%), #FD5151;
+}
+
+.hero_vid {
+    position: absolute;
+    width: auto;
+    left: 50%;
+    top: 30%;
+}
+
+.about_heading {
+    color: #ffffff;
+}
+
+.about_info {
+    position: absolute;
+    top: 25%;
+    left: 24%;
+}
+
+.about_section2 {
+    position: relative;
+    height: 60rem;
+}
+
+.about_section2_h1 {
+    position: absolute;
+    top: 20%;
+}
+
+.about_section2_h1 h1 {
+    background: -webkit-linear-gradient(40.89deg, #FFB847 11.16%, rgba(255, 171, 171, 0.458333) 52.69%, rgba(255, 255, 255, 0) 100.42%), #FD5151;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about_section2_p {
+    position: absolute;
+    top: 35%;
+    width: 42%;
+}
+
+.about_section2_btn{
+    cursor: pointer;
+    position: absolute;
+    top: 65%;
+    box-shadow: 10px 10px #c2c2c2;
+}
