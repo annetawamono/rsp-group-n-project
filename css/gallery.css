@@ -1,0 +1,26 @@
+.gallery::before {
+  content: "";
+  background: linear-gradient(243.89deg, #00F0A8 11.16%, rgba(151, 247, 117, 0.541667) 59.21%, rgba(255, 255, 255, 0) 103.42%), #FBFF49;
+  position: absolute;
+  width: 100vw;
+  height: 110vh;
+  top: -10vh;
+  left: 0;
+  z-index: -1;
+  transform: skewY(-6.22deg);
+}
+
+.gallery .gallery__pictures {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100vh;
+  align-content: stretch;
+  margin-top: 5.9rem;
+}
+
+.gallery img {
+  width: 22%;
+  margin-bottom: 21px;
+  border: solid 8px #000000;
+}
