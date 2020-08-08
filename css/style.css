@@ -13,11 +13,13 @@ h1 {
   /* to get the rem value, divide the font size in pixels by 16 */
   font-size: 4.5rem;
   font-weight: 900;
+  line-height: 5.69rem;
 }
 
 p, input, label, select, button, div {
   font-size: 1.5rem;
   font-weight: 900;
+  line-height: 168%;
 }
 
 a {
@@ -90,6 +92,7 @@ footer .container {
 
   p, input, label, select, button, div {
     font-size: 1rem;
+    line-height: 197%;
   }
 
   .container {
