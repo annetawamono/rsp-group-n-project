@@ -33,6 +33,7 @@
   position: absolute;
   left: 0;
   top: 80vh;
+  /* bottom: -80vh; */
   width: 100%;
   height: 110vh;
   z-index: -2;
@@ -51,4 +52,40 @@
 .contactCTA__content button {
   margin-top: 4rem;
   margin-bottom: 7rem;
+}
+
+@media only screen and (max-width: 786px) {
+  nav .mobileMenu {
+    background-color: #00F0A8;
+  }
+
+  .gallery::before {
+    height: 4420px;
+    transform: skewY(-8.9deg);
+  }
+
+  .gallery .gallery__pictures {
+    height: auto;
+  }
+
+  .gallery img {
+    width: calc(100% - 16px);
+  }
+
+  .contactCTA::before {
+    top: 4100px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .gallery::before {
+    height: calc(100vw / 0.0939);
+    transform: skewY(-8.9deg);
+  }
+
+  .contactCTA::before {
+    top: calc((100vw / 0.0939) - (100vw * 0.728));
+    /* bottom: 0; */
+    height: 200vh;
+  }
 }
