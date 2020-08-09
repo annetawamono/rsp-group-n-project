@@ -1,16 +1,37 @@
+.hero-header::before {
+    content: " ";
+    position: absolute;
+    background: linear-gradient(243.89deg, #00F0A8 11.16%, rgba(151, 247, 117, 0.541667) 59.21%, rgba(255, 255, 255, 0) 103.42%), #FBFF49;
+    width: 100%;
+    height: 120vh;
+    top: -32vh;
+    left: 0;
+    z-index: -1;
+    right:0;
+    bottom:0;
+    transform: skewY(-6.22deg);
+    margin: 0;
+    padding: 0;
+
+}
 .hero-header{
     position: relative;
-    height: 130vh;
+    height: 100vh;
     background: linear-gradient(243.89deg, #00F0A8 11.16%, rgba(151, 247, 117, 0.541667) 59.21%, rgba(255, 255, 255, 0) 103.42%), #FBFF49;
-    /*transform: skewY(-6.22deg);*/
+    transform: skewY(-6.22deg);
+    z-index: 0;
+   
 }
 
+.navs{
+    transform: skewY(6.22deg);
+}
 .nav-hero{
     width: auto;
     position: absolute;
     top: 10%;
     left: 10%;
-   /* transform: skewY(6.22deg);*/
+    transform: skewY(6.22deg);
 }
 .nav-hero-btn1, .nav-hero-btn2{
     box-shadow: 5px 10px #24242452;
@@ -19,13 +40,13 @@
 .hero-image{
     width: 452.88px;
     height: 678.86px; 
-    /*transform: rotate(-6.22deg);*/
+    transform: rotate(-6.22deg);
 }
 .hero-description{
     position: absolute;
     top: 20%;
     left: 60%;
-    /*transform: skewY(6.22deg);*/
+    transform: skewY(6.22deg);
 }
 
 .hero-description-h1{
@@ -65,6 +86,7 @@
     display: flex;
     justify-content: space-between;
     position: relative;
+    margin-bottom: 100px;
 }
 
 .section-2-h1{
@@ -93,7 +115,26 @@
 }
 
 /*section-3*/
+
+.section-3::before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(243.89deg, rgba(255, 255, 255, 0) 11.16%, rgba(190, 232, 255, 0.432292) 43.84%, #FF6978 103.42%), #8329FF;
+    width: 100%;
+    height: 134vh;
+    top: -15vh;
+    left: 0;
+    z-index: -1;
+    right:0;
+    bottom:0;
+    transform: skewY(-6.22deg);
+    margin: 0;
+    padding: 0;
+}
+
 .section-3{
+    position: relative;
+    z-index: 0;
     background: linear-gradient(243.89deg, rgba(255, 255, 255, 0) 11.16%, rgba(190, 232, 255, 0.432292) 43.84%, #FF6978 103.42%), #8329FF;
     width: 100%;
     height: 1024px;
@@ -101,24 +142,25 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /*transform: skewY(-6.22deg);*/
+   
     
 }
 .section-3-h1{
-    /*transform: skewY(6.22deg);*/
+   
     color: white;
 }
 .section-3-p{
    width: 70%;
    text-align: center;
-   color: white;
-  /* transform: skewY(6.22deg);*/
+   color: white; 
     
 }
 .section-3-btn{
     margin-top: 48.24px;
     box-shadow: 5px 10px #24242452;
-   /* transform: skewY(6.22deg);*/
+
 }
+
+
 
 
