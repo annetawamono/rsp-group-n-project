@@ -162,5 +162,124 @@
 }
 
 
+@media only screen and (max-width: 786px) {
 
+body{
+    background-repeat: no-repeat;
+    width: 100%;
+    overflow-x: hidden;
+}
+.container{
+    width: 100%;
+}
+.hero-header{
+    width: 100%;
+}
+.hero-header:before{
+    height: 140vh;
+    width: 100%;
+}
 
+.hero-description{
+    top: 20%;
+    left: 25%; 
+       
+}
+.hero-description-h1{
+    display: block;
+    line-height: normal;
+    text-align: justify;
+    transform: translateX(5%);
+    
+}
+.nav-hero-btn1, .nav-hero-btn2{
+    display: none;
+}
+.nav-hero{
+    /* top: 50%;
+    left: 20%;  */
+    top: 50%;
+    left: 18%;
+    
+    
+}
+
+.hero-image{
+    /* width: 213px;
+    height: 319.28px; */
+    width: 300px;
+    height: 400px;
+}
+
+.counter-section{
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.section-2{
+    flex-direction: column;
+}
+.section-2-h1{
+    text-align: center;
+    line-height: normal;
+    
+}
+.section1img{
+   display: none;
+}
+
+.section-2{
+    height: 700px;
+    margin-top: 40px;
+}
+.description p{
+    top: 50%;
+    left: 20%;
+    visibility: hidden;
+    position: relative;
+}
+
+.description p::after {
+    visibility: visible;
+    position: absolute;
+    top: 200%;
+    right: 22%;
+    width: 90%;
+    content: "We’re a funky fresh barbershop and we’ve been transforming haircuts since 2018. We’ve got one hell of a story...";
+
+}
+.section1-btn{
+    top: 80%;
+    left: 17%;
+}
+.section-3{
+    width: 100%;
+}
+
+.section-3-h1{
+   padding: 0px 80px;
+   line-height: normal;
+       
+}
+.section-3-p{
+    visibility: hidden;
+    position: relative;
+}
+
+.section-3-p::after{
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "We promise we’ll make you look better! And think about it, you couldn’t look any worse ;P";
+    text-align: justify;
+
+}
+
+.section-3::before{
+   
+    top: -10vh;
+    height: 140vh;
+   
+}
+}
