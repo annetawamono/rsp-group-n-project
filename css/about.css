@@ -11,6 +11,13 @@
     top: 30%;
 }
 
+.about_vid_btn {
+    position: absolute;
+    top: 35%;
+    left: 42%;
+    cursor: pointer;
+}
+
 .about_heading {
     color: #ffffff;
 }
@@ -21,14 +28,20 @@
     left: 24%;
 }
 
+/*Section 2 starts here*/
 .about_section2 {
     position: relative;
-    height: 60rem;
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .about_section2_h1 {
     position: absolute;
-    top: 20%;
+    top: 15%;
+    left: 20%;
 }
 
 .about_section2_h1 h1 {
@@ -39,13 +52,56 @@
 
 .about_section2_p {
     position: absolute;
-    top: 35%;
-    width: 42%;
+    top: 28%;
+    left: 20%;
+    width: 25%;
 }
 
-.about_section2_btn{
+.about_section2_btn {
     cursor: pointer;
     position: absolute;
-    top: 65%;
-    box-shadow: 10px 10px #c2c2c2;
+    top: 50%;
+    left: 20%;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.about_section2_gallery {
+    position: absolute;
+    top: 86%;
+    right: 0%;
+    text-align: center;
+    transform: rotate(-6.22deg);
+}
+
+.about_section2_gallery h1 {
+    font-size: 6rem;
+}
+
+/*Section 3 starts here*/
+.about_section3 {
+    background: linear-gradient(243.89deg, rgba(255, 255, 255, 0) 11.16%, rgba(190, 232, 255, 0.432292) 43.84%, #FF6978 103.42%), #8329FF;
+    position: relative;
+    height: 80rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about_section3_h1 {
+    color: #ffffff;
+}
+
+.about_section3_p {
+    text-align: center;
+    color: #ffffff;
+    width: 40%;
+}
+
+.about_section3_btn {
+    cursor: pointer;
+    position: absolute;
+    top: 70%;
+    left: 43%;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
 }
