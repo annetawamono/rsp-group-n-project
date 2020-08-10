@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     overflow-x: hidden;
 }
@@ -19,7 +23,6 @@ body {
 }
 
 .header_container {
-    position: relative;
     height: 70rem;
     z-index: 0;
 }
@@ -89,7 +92,7 @@ body {
 
 .about_section2_gallery {
     position: absolute;
-    top: 79%;
+    top: 70%;
     right: 0%;
     text-align: center;
     transform: rotate(-6.22deg);
@@ -105,48 +108,164 @@ body {
     content: "";
     background: linear-gradient(243.89deg, rgba(255, 255, 255, 0) 11.16%, rgba(190, 232, 255, 0.432292) 43.84%, #FF6978 103.42%), #8329FF;
     position: absolute;
-    clip-path: polygon(0 18.5%, 100% 0%, 100% 100%, 0% 100%);
-/*    transform: skewY(-6.22deg);*/
+    transform: skewY(-6.22deg);
     width: 100%;
-    height: 70rem;
-    z-index: -1;
-    top: 128rem;
+    height: 55rem;
+    z-index: -2;
+    top: -16rem;
     bottom: 0;
     left: 0;
     margin: 0;
     padding: 0;
-    clip: inset(5% 20% 15% 10%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 80%);
 }
 
-.about_section3 .about_section3_content {}
-
 .about_section3 {
-    padding-top: 6%;
-    padding-bottom: 11%;
-    margin: auto;
+    position: relative;
+    background: linear-gradient(230.50deg, rgba(255, 255, 255, 0) 11.16%, rgba(190, 232, 255, 0.432292) 43.84%, #FF6978 103.42%), #8329FF;
+    z-index: 0;
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .about_section3_h1 {
     color: #ffffff;
-    margin: auto;
-    width: 90%;
+    position: absolute;
+    top: 0;
 }
 
 .about_section3_p {
     text-align: center;
     color: #ffffff;
-    width: 65%;
-    margin: auto;
+    width: 40%;
+    position: absolute;
+    top: 25%;
 }
 
 .about_section3_btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 80px;
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    left: 44%;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
+    z-index: 0;
 }
 
-.about_section3 button {
-    cursor: pointer;
-    box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
+@media only screen and (max-width: 786px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    nav .mobileMenu {
+        background-color: #FFB847;
+    }
+
+    .header_container {
+        height: 50rem;
+    }
+
+    .header_container::before {
+        transform: skewY(-8.9deg);
+        height: 70rem;
+    }
+
+    .hero_vid {
+        position: absolute;
+        width: auto;
+        left: 10%;
+        top: 85%;
+    }
+
+    .hero_vid_img {
+        width: 90%;
+    }
+
+    .about_vid_btn {
+        position: absolute;
+        top: 38%;
+        left: 38%;
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+    }
+
+    .about_info {
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        width: 60%;
+    }
+
+    .about_info h1 {
+        line-height: 4.5rem;
+        font-weight: 900;
+        font-size: 48px;
+    }
+
+    .about_section2 {
+        height: 70rem;
+    }
+
+    .about_section2_h1 {
+        width: 50%;
+        font-weight: 900;
+        font-size: 48px;
+    }
+
+    .about_section2_h1 h1 {
+        line-height: 3.5rem;
+    }
+
+    .about_section2_p {
+        position: absolute;
+        top: 35%;
+        left: 20%;
+        width: 60%;
+    }
+
+    .about_section2_gallery {
+        transform: rotate(-8.9deg);
+        top: 80%;
+    }
+    
+    .about_section3::before{
+        transform: skewY(-8.9deg);
+        height: 50rem;
+    }
+    
+    .about_section3{
+        height: 35rem;
+    }
+    
+    .about_section3_h1 {
+        color: #ffffff;
+        top: -25%;
+        left: 10%;
+    }
+
+    .about_section3_h1 h1 {
+        line-height: 4.5rem;
+        width: 54%;
+    }
+
+    .about_section3_p {
+        text-align: left;
+        color: #ffffff;
+        top: 30%;
+        left: 10%;
+        width: 70%;
+    }
+    
+    .about_section_p p{
+        font-size: 48px;
+    }
+    
+    .about_section3_btn{
+        top: 60%;
+        left: 10%;
+    }
 }

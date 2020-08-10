@@ -9,23 +9,37 @@
     <link rel="icon" type="image/svg" href="media/logo_shadow.svg">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/about.css">
+    <script src="js/navMobile.js" charset="utf-8"></script>
+    <script src="js/about.js"></script>
 </head>
 
 <body>
     <header class="header_container">
         <nav>
-            <div class="container navs">
+            <div class="container nav__desktop">
                 <a href="index.html"><img class="logo" src="media/logo_shadow.svg" alt="logo"></a>
                 <div class="navlinks">
-                    <a href="about.html">About</a>
+                    <a href="about.html" class="active">About</a>
                     <a href="barbers.html">Our Barbers</a>
                     <a href="pricing.html">Pricing</a>
                     <a href="gallery.html">Gallery</a>
                     <a href="contact.html">Contact</a>
                 </div>
             </div>
+            <div class="container nav__mobile">
+                <a id="menu" href=""><img class="menu" src="media/nav_mobile.svg" alt="Menu"></a>
+                <div class="mobileMenu menuClosed">
+                    <a href="index.html"><img src="media/logo_shadow.svg" alt="logo"></a>
+                    <a href="about.html" class="active">About</a>
+                    <a href="barbers.html">Our Barbers</a>
+                    <a href="pricing.html">Pricing</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="contact.html">Contact</a>
+                    <a id="close" href=""><img src="media/close.svg" alt="close"></a>
+                </div>
+            </div>
             <div class="hero_vid">
-                <img src="media/video_still.png">
+                <img class="hero_vid_img" src="media/video_still.png">
                 <img class="about_vid_btn" src="media/video_play_btn_background.png" width="110px" height="110px">
             </div>
             <div class="about_info">
@@ -55,20 +69,15 @@
             </div>
         </div>
 
-        <div class="container about_section3">
-            <div class="about_section3_content">
-                <div class="about_section3_h1">
-                    <h1>Get Your Hair Cut by Us</h1>
-                </div>
-                <div class="about_section3_p">
-                    <p>We promise we’ll make you look better! And think about it, you couldn’t look any worse ;P</p>
-                </div>
-                <div class="about_section3_btn">
-                <a href="pricing.html">
-                    <button>You're Right</button>
-                </a>
-                    </div>
+        <div class="about_section3">
+            <div class="about_section3_h1">
+                <h1>Get Your Hair Cut by Us</h1>
             </div>
+            <div class="about_section3_p">
+                <p>We promise we’ll make you look better! And think about it, you couldn’t look any worse ;P</p>
+            </div>
+                <button class="about_section3_btn">You're Right</button>
+
         </div>
     </main>
     <footer>
