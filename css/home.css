@@ -20,6 +20,7 @@
     background: linear-gradient(243.89deg, #00F0A8 11.16%, rgba(151, 247, 117, 0.541667) 59.21%, rgba(255, 255, 255, 0) 103.42%), #FBFF49;
     transform: skewY(-6.22deg);
     z-index: 0;
+    
    
 }
 
@@ -35,6 +36,7 @@
 }
 .nav-hero-btn1, .nav-hero-btn2{
     box-shadow: 5px 10px #24242452;
+    cursor: pointer;
 }
 
 .hero-image{
@@ -107,6 +109,7 @@
     position: absolute;
     top: 60%;
     box-shadow: 5px 10px #24242452;
+    cursor: pointer;
 }
 .section1img{
     width: 703px;
@@ -121,10 +124,10 @@
     position: absolute;
     background: linear-gradient(243.89deg, rgba(255, 255, 255, 0) 11.16%, rgba(190, 232, 255, 0.432292) 43.84%, #FF6978 103.42%), #8329FF;
     width: 100%;
-    height: 134vh;
+    height: 120vh;
     top: -15vh;
     left: 0;
-    z-index: -1;
+    z-index: -2;
     right:0;
     bottom:0;
     transform: skewY(-6.22deg);
@@ -158,11 +161,24 @@
 .section-3-btn{
     margin-top: 48.24px;
     box-shadow: 5px 10px #24242452;
+    cursor: pointer;
 
 }
 
 
 @media only screen and (max-width: 786px) {
+
+
+    .mobile-version{
+        transform: skewY(6.22deg);
+        position: absolute;
+        z-index: 2;
+    }
+
+    nav .mobileMenu {
+        background: linear-gradient(243.89deg, #00F0A8 11.16%, rgba(151, 247, 117, 0.541667) 59.21%, rgba(255, 255, 255, 0) 103.42%), #FBFF49;
+
+      }
 
 body{
     background-repeat: no-repeat;
