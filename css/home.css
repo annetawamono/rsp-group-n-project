@@ -232,15 +232,17 @@ body{
 
 .counter-section{
     flex-direction: column;
-    margin-top: 60px;
+    margin-top: 100px;
 }
 
 .section-2{
     flex-direction: column;
 }
 .section-2-h1{
-    text-align: center;
+    text-align: left;
     line-height: normal;
+    transform: translateX(7%);
+    
     
 }
 .section1img{
@@ -269,7 +271,9 @@ body{
 }
 .section1-btn{
     top: 80%;
-    left: 17%;
+    left: 7%;
+    
+    
 }
 .section-3{
    align-items: center;
@@ -279,7 +283,7 @@ body{
 .section-3-h1{
    padding: 0px 80px;
    line-height: normal;
-       
+   transform: translateX(-3%);
 }
 .section-3-p{
     visibility: hidden;
@@ -299,8 +303,12 @@ body{
 .section-3::before{
    
      top: -10vh;
-    height: 140vh; 
+     height: 140vh; 
    
    
+}
+
+.section-3-btn{
+    transform: translateX(-40%);
 }
 }
