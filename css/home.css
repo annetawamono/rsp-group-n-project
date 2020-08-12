@@ -187,7 +187,8 @@
 }
 
 nav .mobileMenu {
-        background: #00F0A8;
+    background: linear-gradient(243.89deg, #00F0A8 11.16%, rgba(151, 247, 117, 0.541667) 59.21%, rgba(255, 255, 255, 0) 103.42%), #FBFF49;
+
 }
 
 body{  
