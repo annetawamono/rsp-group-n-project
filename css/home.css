@@ -197,7 +197,7 @@
 
 .mobile-container{
     display: block;
-    height: 1000px;
+    height: 1080px;
 }
 
 .mobile-section{
@@ -330,6 +330,7 @@ body{
 .section-3{
    align-items: center;
    justify-content: center;
+   
 }
 
 .section-3-h1{
