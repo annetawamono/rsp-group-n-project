@@ -1,0 +1,53 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.pricing::before {
+    content: "";
+    background: linear-gradient(243.89deg, #00F0A8 11.16%, rgba(151, 247, 117, 0.541667) 59.21%, rgba(255, 255, 255, 0) 103.42%), #FBFF49;
+    position: absolute;
+    width: 100%;
+    height: 110rem;
+    top: -8rem;
+    left: 0;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    transform: skewY(-6.22deg);
+    margin: 0;
+    padding: 0;
+}
+
+.pricing {
+    height: 100rem;
+}
+
+.pricing_section1_h1 {
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+}
+
+.pricing_section1_table {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    position: absolute;
+    width: 810px;
+    height: 816px;
+    left: 315px;
+    top: 420px;
+}
+
+
+@media only screen and (max-width: 786px) {
+    nav .mobileMenu {
+        background-color: #00F0A8;
+    }
+}

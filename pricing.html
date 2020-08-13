@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="author" content="Group N">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,31 +9,130 @@
     <link rel="icon" type="image/svg" href="media/logo_shadow.svg">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/pricing.css">
-  </head>
-  <body>
-  <header>
-    <nav>
-      <div class="container">
-        <a href="index.html"><img class="logo" src="media/logo_shadow.svg" alt="logo"></a>
-        <div class="navlinks">
-          <a href="about.html">About</a>
-          <a href="barbers.html">Our Barbers</a>
-          <a href="pricing.html">Pricing</a>
-          <a href="gallery.html">Gallery</a>
-          <a href="contact.html">Contact</a>
+    <script src="js/navMobile.js" charset="utf-8"></script>
+    <script src="js/pricing.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container nav__desktop">
+                <a href="index.html"><img class="logo" src="media/logo_shadow.svg" alt="logo"></a>
+                <div class="navlinks">
+                    <a href="about.html">About</a>
+                    <a href="barbers.html">Our Barbers</a>
+                    <a href="pricing.html" class="active">Pricing</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="container nav__mobile">
+                <a id="menu" href=""><img class="menu" src="media/nav_mobile.svg" alt="Menu"></a>
+                <div class="mobileMenu menuClosed">
+                    <a href="index. html"><img src="media/logo_shadow.svg" alt="logo"></a>
+                    <a href="about.html">About</a>
+                    <a href="barbers.html">Our Barbers</a>
+                    <a href="pricing.html" class="active">Pricing</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="contact.html">Contact</a>
+                    <a id="close" href=""><img src="media/close.svg" alt="close"></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container pricing">
+            <div class="pricing_section1_h1">
+                <h1>Pricing List 2020</h1>
+            </div>
+            <div class="pricing_section1_table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Cut</th>
+                            <th>Price</th>
+                            <th>Treatment & Styles</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Beard</td>
+                            <td>$75</td>
+                            <td>Base Price</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>+$25</td>
+                            <td>Styling Mousse</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>+$10</td>
+                            <td>Beard Oil</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>+$5</td>
+                            <td>Bows</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Moustache</td>
+                            <td>$50</td>
+                            <td>Base Price</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>+$10</td>
+                            <td>Cowboy Curls</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>+$5</td>
+                            <td>Essential Oils</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>+$10</td>
+                            <td>The Doc Holiday</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Haircut</td>
+                            <td>$40</td>
+                            <td>Base Price</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>+$20</td>
+                            <td>Fade</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>+$20</td>
+                            <td>Quiff</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>+$10</td>
+                            <td>Buzzcut</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>+$10</td>
+                            <td>Crewcut</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <div class="container">
-    </div>
-  </main>
-  <footer>
-    <div class="container">
-      <p>Website by Group N &#169;</p>
-      <p>Tel: 788 976 3546 | 42 Wallaby Way, Sydney</p>
-    </div>
-  </footer>
-  </body>
+    </main>
+    <footer>
+        <div class="container">
+            <p>Website by Group N &#169;</p>
+            <p>Tel: 788 976 3546 | 42 Wallaby Way, Sydney</p>
+        </div>
+    </footer>
+</body>
+
 </html>
