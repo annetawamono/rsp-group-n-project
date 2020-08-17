@@ -41,10 +41,94 @@ body {
     position: absolute;
     width: 810px;
     height: 816px;
-    left: 315px;
+    left: 540px;
     top: 420px;
+    text-align: left;
+    border-collapse: collapse;
 }
 
+.pricing_section1_table table {
+    border-spacing: 0;
+}
+
+table, tr, td{
+    padding: 8px;
+}
+
+.pricing_section1_table thead{
+    color: #ffffff;
+}
+
+th{
+    border-bottom: 5px solid #000000;
+}
+
+.pricing_section1_table td:nth-child(even){
+    text-align: right;
+    border-bottom: 1px solid #000000;
+    border-right: 1px solid #000000;
+}
+
+tr td:last-of-type{
+    border-bottom: 1px solid #000000;
+}
+
+tr td:first-child{
+    font-size: 30px;
+}
+
+/*Section 3 starts here*/
+
+.pricing_section3::before {
+    content: "";
+    background: linear-gradient(243.89deg, rgba(255, 255, 255, 0) 11.16%, rgba(190, 232, 255, 0.432292) 43.84%, #FF6978 103.42%), #8329FF;
+    position: absolute;
+    transform: skewY(-6.22deg);
+    width: 100%;
+    height: 55rem;
+    z-index: -2;
+    top: -16rem;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 80%);
+}
+
+.pricing_section3 {
+    position: relative;
+    background: linear-gradient(230.50deg, rgba(255, 255, 255, 0) 11.16%, rgba(190, 232, 255, 0.432292) 43.84%, #FF6978 103.42%), #8329FF;
+    z-index: 0;
+    width: 100%;
+    height: 45rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricing_section3_h1 {
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+}
+
+.pricing_section3_p {
+    text-align: center;
+    color: #ffffff;
+    width: 40%;
+    position: absolute;
+    top: 25%;
+}
+
+.pricing_section3_btn {
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    left: 44%;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
+    z-index: 0;
+}
 
 @media only screen and (max-width: 786px) {
     nav .mobileMenu {
