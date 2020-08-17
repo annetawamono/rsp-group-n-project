@@ -61,7 +61,8 @@
    
 }
 .nav-hero-btn2:hover{
-    background-color: #d9534f;
+    /*background-color: #d9534f;*/
+    background-color: #f83232;
 }
 
 .nav-hero-btn2 a{
@@ -88,6 +89,7 @@
 /*Counter Section*/
 
 .counter-section{
+    margin-top: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
