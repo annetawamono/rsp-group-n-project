@@ -177,7 +177,7 @@ body {
         position: absolute;
         width: auto;
         left: 10%;
-        top: 85%;
+        top: 70%;
     }
 
     .hero_vid_img {
@@ -222,25 +222,33 @@ body {
 
     .about_section2_p {
         position: absolute;
-        top: 35%;
+        top: 40%;
         left: 20%;
         width: 60%;
     }
 
+    .about_section2_btn {
+        top: 55%;
+    }
+
     .about_section2_gallery {
         transform: rotate(-8.9deg);
-        top: 80%;
+        top: 75%;
     }
-    
-    .about_section3::before{
+
+    .about_section2_gallery h1 {
+        font-size: 3.5rem;
+    }
+
+    .about_section3::before {
         transform: skewY(-8.9deg);
         height: 50rem;
     }
-    
-    .about_section3{
+
+    .about_section3 {
         height: 35rem;
     }
-    
+
     .about_section3_h1 {
         color: #ffffff;
         top: -25%;
@@ -249,7 +257,7 @@ body {
 
     .about_section3_h1 h1 {
         line-height: 4.5rem;
-        width: 54%;
+        width: 60%;
     }
 
     .about_section3_p {
@@ -259,13 +267,38 @@ body {
         left: 10%;
         width: 70%;
     }
-    
-    .about_section_p p{
+
+    .about_section_p p {
         font-size: 48px;
     }
-    
-    .about_section3_btn{
+
+    .about_section3_btn {
         top: 60%;
         left: 10%;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+
+    .about_info {
+        width: 70%;
+    }
+
+    .hero_vid {
+        top: 100%;
+    }
+
+    .about_section2_h1 {
+        width: 60%;
+        top: 10%;
+    }
+
+    .about_section2_p {
+        top: 35%;
+    }
+
+    .about_section3_h1 h1 {
+        line-height: 4.5rem;
+        width: 80%;
     }
 }

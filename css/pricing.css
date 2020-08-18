@@ -51,29 +51,31 @@ body {
     border-spacing: 0;
 }
 
-table, tr, td{
+table,
+tr,
+td {
     padding: 8px;
 }
 
-.pricing_section1_table thead{
+.pricing_section1_table thead {
     color: #ffffff;
 }
 
-th{
+th {
     border-bottom: 5px solid #000000;
 }
 
-.pricing_section1_table td:nth-child(even){
+.pricing_section1_table td:nth-child(even) {
     text-align: right;
     border-bottom: 1px solid #000000;
     border-right: 1px solid #000000;
 }
 
-tr td:last-of-type{
+tr td:last-of-type {
     border-bottom: 1px solid #000000;
 }
 
-tr td:first-child{
+tr td:first-child {
     font-size: 30px;
 }
 
@@ -130,8 +132,144 @@ tr td:first-child{
     z-index: 0;
 }
 
+.hidden {
+    visibility: hidden;
+}
+
 @media only screen and (max-width: 786px) {
     nav .mobileMenu {
         background-color: #00F0A8;
+    }
+
+    .pricing::before {
+        height: 170rem;
+    }
+
+    .pricing {
+        height: 160rem;
+    }
+
+    .pricing_section1_h1 {
+        width: 30%;
+        left: 20%;
+        top: 15%;
+        text-align: left;
+    }
+
+    .pricing_section1_h1 h1 {
+        line-height: 3.5rem;
+    }
+
+    .pricing_section1_table {
+        left: 10%;
+        top: 45%;
+        width: auto;
+        height: auto;
+        text-align: left;
+    }
+
+    tr td {
+        border-bottom: 1px solid #000;
+        border-right: 1px solid #000;
+    }
+
+    .pricing_section1_table td:nth-child(even) {
+        text-align: justify;
+        border-bottom: 1px solid #000;
+        border-right: 1px solid #000;
+        border-left: 1px solid #000;
+    }
+
+    .hidden {
+        visibility: visible;
+    }
+
+    tr td:first-child {
+        font-size: 20px;
+        border-top: 1px solid #000;
+    }
+    
+    tr td:last-child{
+        border-left: 1px solid #000;
+    }
+
+    
+    
+    td {
+        display: block;
+    }
+
+    thead tr {
+        position: absolute;
+        left: -99999px;
+    }
+
+    td:nth-of-type(1)::before {
+        content: 'Cut';
+        border-left: 8px solid #000;
+        border-right: 1px solid #000;
+        text-align: right;
+        padding-right: 10px;
+        width: 180px;
+        
+    }
+
+    td:nth-of-type(2)::before {
+        content: 'Price';
+        text-align: right;
+        padding-right: 10px;
+        width: 180px;
+        border-right: 1px solid #000;
+    }
+
+    td:nth-of-type(3)::before {
+        content: 'Treatment & Styles';
+        text-align: right;
+        padding-right: 10px;
+        font-size: 16px;
+        width: 180px;
+        border-right: 1px solid #000;
+    }
+
+    td::before {
+        display: inline-block;
+        width: 50%;
+    }
+
+    .pricing_section3::before {
+        transform: skewY(-8.9deg);
+        height: 50rem;
+    }
+
+    .pricing_section3 {
+        height: 35rem;
+    }
+
+    .pricing_section3_h1 {
+        color: #ffffff;
+        top: -25%;
+        left: 10%;
+    }
+
+    .pricing_section3_h1 h1 {
+        line-height: 4.5rem;
+        width: 80%;
+    }
+
+    .pricing_section3_p {
+        text-align: left;
+        color: #ffffff;
+        top: 25%;
+        left: 10%;
+        width: 70%;
+    }
+
+    .pricing_section_p p {
+        font-size: 48px;
+    }
+
+    .pricing_section3_btn {
+        top: 60%;
+        left: 10%;
     }
 }
