@@ -152,7 +152,7 @@ tr td:first-child {
     .pricing_section1_h1 {
         width: 30%;
         left: 20%;
-        top: 15%;
+        top: 20%;
         text-align: left;
     }
 
@@ -161,8 +161,8 @@ tr td:first-child {
     }
 
     .pricing_section1_table {
-        left: 10%;
-        top: 45%;
+        left: 5%;
+        top: 60%;
         width: auto;
         height: auto;
         text-align: left;
@@ -188,13 +188,11 @@ tr td:first-child {
         font-size: 20px;
         border-top: 1px solid #000;
     }
-    
-    tr td:last-child{
+
+    tr td:last-child {
         border-left: 1px solid #000;
     }
 
-    
-    
     td {
         display: block;
     }
@@ -211,7 +209,7 @@ tr td:first-child {
         text-align: right;
         padding-right: 10px;
         width: 180px;
-        
+
     }
 
     td:nth-of-type(2)::before {
@@ -271,5 +269,55 @@ tr td:first-child {
     .pricing_section3_btn {
         top: 60%;
         left: 10%;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    .pricing::before {
+        height: 180rem;
+    }
+
+    .pricing {
+        height: 170rem;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .pricing_section1_h1 {
+        left: 20%;
+        top: 25%;
+    }
+
+    .pricing_section1_table {
+        top: 65%;
+        left: 0;
+    }
+
+    .pricing::before {
+        height: 180rem;
+    }
+
+    .pricing {
+        height: 170rem;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .pricing::before {
+        height: 200rem;
+    }
+
+    .pricing {
+        height: 190rem;
+    }
+
+    tr td:first-child {
+        font-size: 15px;
+        width: 100%;
+    }
+
+    tr td:last-child {
+        font-size: 15px;
+        width: 100%;
     }
 }

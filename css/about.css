@@ -177,7 +177,7 @@ body {
         position: absolute;
         width: auto;
         left: 10%;
-        top: 70%;
+        top: 60%;
     }
 
     .hero_vid_img {
@@ -228,12 +228,12 @@ body {
     }
 
     .about_section2_btn {
-        top: 55%;
+        top: 60%;
     }
 
     .about_section2_gallery {
         transform: rotate(-8.9deg);
-        top: 75%;
+        top: 74%;
     }
 
     .about_section2_gallery h1 {
@@ -278,10 +278,32 @@ body {
     }
 }
 
+@media only screen and (max-width: 415px) {
+    .hero_vid {
+        top: 90%;
+    }
+
+    .about_section3_h1 h1 {
+        width: 70%;
+    }
+
+    .about_section2_gallery {
+        top: 76%;
+    }
+
+    .about_section2_btn {
+        top: 55%;
+    }
+}
+
 @media only screen and (max-width: 380px) {
 
     .about_info {
         width: 70%;
+    }
+
+    .about_section2_gallery {
+        top: 74%;
     }
 
     .about_section2_h1 {
@@ -291,10 +313,5 @@ body {
 
     .about_section2_p {
         top: 35%;
-    }
-
-    .about_section3_h1 h1 {
-        line-height: 4.5rem;
-        width: 80%;
     }
 }
