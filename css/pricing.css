@@ -41,7 +41,7 @@ body {
     position: absolute;
     width: 810px;
     height: 816px;
-    left: 540px;
+    left: 600px;
     top: 420px;
     text-align: left;
     border-collapse: collapse;
@@ -302,13 +302,13 @@ tr td:first-child {
     }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 330px) {
     .pricing::before {
-        height: 200rem;
+        height: 180rem;
     }
 
     .pricing {
-        height: 190rem;
+        height: 170rem;
     }
 
     tr td:first-child {

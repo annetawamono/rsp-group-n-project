@@ -92,7 +92,7 @@ body {
 
 .about_section2_gallery {
     position: absolute;
-    top: 70%;
+    top: 69%;
     right: 0%;
     text-align: center;
     transform: rotate(-6.22deg);
@@ -303,7 +303,7 @@ body {
     }
 
     .about_section2_gallery {
-        top: 74%;
+        top: 76%;
     }
 
     .about_section2_h1 {
