@@ -83,6 +83,11 @@
 }
 
 @media only screen and (max-width: 425px) {
+  h1 {
+    font-size: 3rem;
+    line-height: 117.5%;
+  }
+
   .gallery::before {
     height: calc(100vw / 0.0939);
     transform: skewY(-8.9deg);
@@ -90,6 +95,12 @@
 
   .contactCTA::before {
     top: calc((100vw / 0.0939) - (100vw * 0.728));
-    
+
   }
+
+  .contactCTA .contactCTA__content {
+    text-align: left;
+    padding-top: 29%;
+  }
+
 }
